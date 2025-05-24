@@ -1,0 +1,53 @@
+:root{
+    --mob:#0ae6cc;
+    --tab:#f30808;
+    --laptop:#46f208;
+    --desktop:#ab08f7;
+
+}
+
+*{
+    margin:10px;
+    padding:5px;
+    
+}
+
+.box{
+    place-items: center;
+    display:grid;
+    background-color: orange;
+}
+
+.text{
+    font-size: 2rem;
+
+}
+@media screen and (min-width:567px){
+.box{
+    background-color: var(--mob);
+}    
+}
+@media screen and (min-width:768px){
+    .box{
+        background-color: var(--tab);
+    }    
+    }
+    
+@media screen and (min-width:992px){
+        .box{
+            background-color: var(--laptop);
+        }    
+        }
+
+@media screen and (min-width:1200px){
+        .box{
+                background-color: var(--desktop);
+            }    
+            }
+
+#size{
+    position:absolute;
+    top:60%;
+    color:burlywood;
+    font-size: 2rem;
+}
